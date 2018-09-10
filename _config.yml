@@ -4,7 +4,7 @@ author: Josiah Bryan # You :P
 description: > # Meta description of Homepage
   This is the main site for Halcyonic Security Research where I try to post on interesting security (or random) topics
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://halcyonic.us" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://halcyonic.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
 social:
