@@ -808,7 +808,7 @@ button:disabled :focus {
 	min-height: 250px;
 	border-radius: 4px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #222325;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 	margin-bottom: 2.25rem;
