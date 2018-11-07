@@ -14,7 +14,7 @@ permalink: /categories/
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4><a href="{{ post.url }}">{{post.title}}</a></h4>
+      <h4><a href="{{ post.url }}" style="color:#BEBEBE">{{post.title}}</a></h4>
     </article>
     {% endfor %}
   </div>
