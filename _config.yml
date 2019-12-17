@@ -22,7 +22,7 @@ navigation: # Navigation links
 tagline: >
   Our greatest accomplishments cannot be behind us, because our destiny lies above us. -Interstellar
 
-hero_img: posts/fallclouds.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/winterclouds.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: support@halcyonic.us # email for form submission
 
