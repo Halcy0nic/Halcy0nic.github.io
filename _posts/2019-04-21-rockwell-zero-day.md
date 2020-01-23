@@ -26,11 +26,11 @@ The following Rockwell Automation products are affected:
 * CompactLogix 5370 L3 controllers (includes CompactLogix GuardLogix controllers) v30.014 and earlier
 
 ## Open Redirect Vulnerability
-An Open Redirect vulnerability occurs when a web application accepts user-supplied input in the URL that contains a link to an external website, and consequently uses that link to redirect the user's browser, providing a mechanism for attackers to install malicious software on the user's machine. The Open Redirect vulnerability we discovered in various Rockwell Controllers is no exception to this rule.  Each controller runs a web server that displays diagnostics about that specific PLC.  There also exist a URL parameter that enables the PLC to redirect the user's browser like so:
+An Open Redirect vulnerability occurs when a web application accepts user-supplied input in the URL that contains a link to an external website, and consequently uses that link to redirect the user's browser, providing a mechanism for attackers to install malicious software on the user's machine. The Open Redirect vulnerability we discovered in various Rockwell Controllers is no exception to this rule.  Each controller runs a web server that displays diagnostics about that specific PLC.  There also exists a URL parameter that enables the PLC to redirect the user's browser like so:
 ```
 http://192.168.1.12/index.html?redirect=/localpage
 ```
-The intent of the redirect parameter is to send users to another page located on the PLCs website.  Under normal circumstances, the PLC would filter out redirects to an external website, so if you tried the following:
+The redirect parameter intends to send users to another page located on the PLCs website.  Under normal circumstances, the PLC would filter out redirects to an external website, so if you tried the following:
 ```
 http://192.168.1.12/index.html?redirect=/externalsite
 ```
