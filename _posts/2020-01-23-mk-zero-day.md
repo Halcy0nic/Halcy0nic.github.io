@@ -24,7 +24,7 @@ Cross-Site Scripting (XSS) is a common web vulnerability that allows an attacker
 
 DOM-based XSS can be more difficult to discover than other forms of XSS because it requires a detailed review of how and where the user input is stored within the DOM. Context is the most important aspect when searching for DOM XSS because the location where user input is stored will almost certainly be different in each scenario and application.
 
-## Identifying Vulnerable Parameters
+## Identifying the Vulnerability
 The overall process for identifying DOM XSS bugs is simple:
 
 1. See if the application stores user input somewhere in the DOM
