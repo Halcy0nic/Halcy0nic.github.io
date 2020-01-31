@@ -21,14 +21,14 @@ Jython is the JVM implementation of python. To utilize Burp extensions in Python
 
 ## Installing SQLiPy extension in Burp
 
-1. Download the SQLiPy extension in Burp under Extender->BApp Store. I already have the extensions installed, but if you don't you should see an 'Install' button where my 'Reinstall' button is located:
+1. Download the SQLiPy extension in Burp under Extender->BApp Store. I already have the extension installed, but if you don't you should see an 'Install' button where my 'Reinstall' button is located:
 
 ![bap_extension](/assets/img/posts/bap_extension.png)
 
 
-## Using the SQLiPy extension in Burp
+## Using the SQLiPy Extension in Burp
 
-To use the burp SQLpi extension you must first start the SQLMap API server. To do so, head over to the SQLiPy->SQLMap API tab. From here you can specify the *Listen IP* (I would keep this at 127.0.0.1), the *Listen Port*, the *Python directory** (automatically populated), and the *SQLMap API* (automatically populated):
+To use the Burp SQLipy extension you must first start the SQLMap API server. To do so, head over to the SQLiPy->SQLMap API tab. From here you can specify the *Listen IP* (I would keep this at 127.0.0.1), the *Listen Port*, the *Python directory** (automatically populated), and the *SQLMap API* (automatically populated):
 
 ![sqlmap_api_off](/assets/img/posts/sqlmap_api_off.png)
 
@@ -36,7 +36,7 @@ Click the *Start API* button:
 
 ![sqlmap_api_on](/assets/img/posts/sqlmap_api_on.png)
 
-Once the server has successfully started, you can start scanning requests that you see through your proxy tab. **Note**, this will work with HTTP GET **and** POST requests:
+Once the server has successfully started, you can start scanning requests that you see through your proxy tab. **Note**, this will work with HTTP GET and POST requests:
 
 ![sqlipy_send](/assets/img/posts/sqlipy_send.png)
 
