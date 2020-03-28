@@ -5,7 +5,7 @@ featured-img: quarantine2020
 category: [Info]
 ---
 
-In honor of social distancing, I will be hosting a remote quarantine CTF Thursday, April 2nd, 2020 from 6:00-8:00 PST.  The CTF is completely free and presents five different web application security challenges. You can easily register [here](https://halcyonic.ctfd.io) to secure your spot!
+In honor of social distancing, I will be hosting a remote quarantine CTF Thursday, April 2nd, 2020 from 6:00-9:00 PST.  The CTF is completely free and presents five different web application security challenges. You can easily register [here](https://halcyonic.ctfd.io) to secure your spot!
 
 ## Details
 
